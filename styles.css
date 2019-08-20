@@ -1,0 +1,143 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+#wrapper{
+  display: grid;
+}
+
+.navigation{
+  display: flex;
+  justify-content: center;
+  background-color: #383e4c;
+  padding-bottom: 8px;
+}
+
+.item {
+  padding: 12px 25px;
+  margin: 10px;
+  font-family: 'open-sans', Arial;
+  font-size: 20px;
+  border-style: solid;
+  border-color: #646d7c;
+  color: white;  
+}
+
+.title {
+  display: flex;
+  height: 535px;
+  background-image: url('assets/images/stepwell_india.jpg');
+  background-size: cover;
+}
+
+.title-content {
+  font-size: 70px;
+  margin: auto;
+  text-align: center;
+}
+.title-content .header{
+    color: #fff;
+    font-size: 70px;
+    text-transform: uppercase;
+    text-shadow: 2px 2px #000;
+}
+
+.title-content .description{
+    color: white;
+    font-size: 30px;
+}
+
+.section_1 { 
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 375px);
+  grid-gap: 30px;
+  margin-top: 70px;
+  justify-content: center;
+}
+.section_2 { 
+  display: flex;
+  margin-top: 70px;
+  row-gap: 5px;
+  justify-content: center;
+}
+.section_2 > article {
+  background-color: #F0F0F0;
+}
+.section_2 > article img {
+  max-width: 100%;
+}
+
+.section_1 > article {
+  background-color: #F0F0F0;
+}
+.section_1 > article img {
+  max-width: 100%;
+}
+.text {
+  padding: 0 20px 20px;
+  line-height:1.5; 
+}
+
+.green-text {
+  color: #178A27;
+  font-size: 25px;
+  font-weight: 900;
+}
+
+.blue-text {
+  color: #1686C1;
+  font-size: 25px;
+  font-weight: 900;
+}
+
+.grey-text {
+  color: #666666;
+  font-size: 25px;
+  font-weight: 900;
+}
+
+.button-centering{
+  display: grid;
+  justify-content: center;
+}
+
+.green-btn {
+  background-color: #4CAF50;
+  border: 0;
+  border-radius: 5px;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 20px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.blue-btn {
+  background-color: #1686C1;
+  border: 0;
+  border-radius: 5px;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 20px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.red-btn {
+  background-color: #852406;
+  border: 0;
+  border-radius: 5px;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 20px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+
