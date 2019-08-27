@@ -14,10 +14,6 @@ body {
   width: 100%;
 }
 
-/* .sticky + .content {
-  padding-top: 102px;
-} */
-
 #header {
   display: grid;
 }
@@ -190,12 +186,11 @@ body {
 
 .services {
   display: flex;
-  background-position: bottom;
+  background-position: center;
   background-repeat: no-repeat;
   background-image: url('assets/images/kerala.jpg');
   height: 320px;
 }
-
 
 .services h1 {
   color: #fff;
@@ -213,8 +208,9 @@ body {
 .columns {
   display: grid;
   margin-top: 60px;
+  margin-bottom: 60px;
   justify-content: center;
-  grid-template-columns: repeat(4, 260px);
+  grid-template-columns: repeat(4, 270px);
   grid-template-rows: 1fr;
   grid-gap: 35px;
   grid-template-areas:
@@ -231,7 +227,7 @@ body {
 }
 
 .columns-card {
-  padding: 25px 25px 50px 25px;
+  padding: 25px 25px 15px 25px;
   color: #666666;
 }
 
@@ -245,11 +241,173 @@ body {
   text-align: start;
 }
 
-.one-big-column-img {
-  object-fit: cover;
-  
-}
-
 .columns>article img {
   width: 100%;
+  height: auto;
+}
+
+.button-center {
+  display: grid;
+  justify-content: center;
+  padding: 15px;
+}
+
+.button-left {
+  display: grid;
+  justify-content: left;
+  padding: 0px 25px 25px 25px;
+}
+
+.contact-body {
+  display: flex;
+  height: 550px;
+  background-image: url('assets/images/india-transparent.png');
+  background-position: center;
+  background-size: cover;
+}
+
+.contact-content {
+  font-size: 150px;
+  text-align: center;
+  /* border-style: solid; */
+  border-radius: 5px;
+}
+
+.contact-content .header {
+  color: #fff;
+  font-size: 36px;
+  text-shadow: 2px 2px #000;
+  margin-top: 50px;
+}
+
+/*Form Elements*/
+
+form {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    "instructions instructions"
+    "name message"
+    "email message"
+    "subject message"
+    ". button";
+  margin: 20px 400px 20px 400px;
+  color: black;
+}
+#name {
+  grid-area: name;
+}
+
+#email {
+  grid-area: email;
+}
+
+#subject {
+  grid-area: subject;
+}
+
+#instructions {
+  font-size: 20px;
+  line-height: 1;
+  /* border: none; */
+  border-radius: 5px;
+  /* background: rgba(200, 54, 54, 0.5); */
+  grid-area: instructions;
+}
+
+.instructions {
+  padding: 20px;
+  /* margin-bottom: 30px; */
+
+}
+
+input[type="text"] {
+  opacity: 0.5;
+  font-size: 20px;
+  border-radius: 5px;
+}
+
+textarea {
+  color: black;
+  font-size: 20px;
+  opacity: 0.5;
+}
+
+label {
+  display: block;
+  border-style: none;
+  border-radius: 5px;
+
+}
+
+#name,
+#email,
+#subject,
+#message {
+  color: black;
+  padding-left: 15px;
+}
+
+#message {
+  padding-top: 20px;
+  grid-area: message;
+}
+
+/*Footer*/
+
+.footer {
+  justify-content: center;
+  width: auto;
+  height: 220px;
+}
+
+.footer-title {
+  margin: 35px 0px 25px 0px;
+  text-align: center;
+  color: #666;
+  font-size: 32px;
+  font-style: italic;
+  font-weight: 500;
+}
+
+.footer-text {
+  font-style: italic;
+  text-align: center;
+  margin-bottom: 60px;
+  line-height: 0.5;
+}
+
+hr {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: 0;
+  border-top: 1px solid #eee;
+}
+
+.copyright {
+  margin: auto;
+  text-align: center;
+  color: #666;
+  font-size: 12px;
+}
+
+.contact-button {
+  display: grid;
+  justify-content: flex-start;
+  grid-area: button;
+
+}
+
+.black-btn {
+  background-color: #262628;
+  border: 1px solid white;
+  border-radius: 10px;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 20px;
+  margin: 4px 2px;
+  cursor: pointer;
 }
