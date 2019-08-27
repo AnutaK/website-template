@@ -412,15 +412,10 @@ hr {
   cursor: pointer;
 }
 
-/*Parallaz Effect*/
+/*Parallax Effect*/
 .header-parallax {
-  /* The image used */
   background-image: url("assets/images/stepwell_india.jpg");
-
-  /* Set a specific height */
   min-height: 500px; 
-
-  /* Create the parallax scrolling effect */
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -428,27 +423,17 @@ hr {
 }
 
 .services-parallax {
-  /* The image used */
   background-image: url("assets/images/kerala.jpg");
-
-  /* Set a specific height */
   height: 320px;
-  /* Create the parallax scrolling effect */
   background-attachment: fixed;
-  /* background-position: center; */
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .contact-parallax {
-  /* The image used */
   background-image: url("assets/images/india-transparent.png");
-
-  /* Set a specific height */
   min-height: 500px; 
-  /* Create the parallax scrolling effect */
   background-attachment: fixed;
-  /* background-position: center; */
   background-repeat: no-repeat;
   background-size: cover;
 }
