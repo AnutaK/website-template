@@ -23,6 +23,7 @@ body {
   justify-content: center;
   background-color: #383e4c;
   padding-bottom: 8px;
+
 }
 
 .item {
@@ -32,7 +33,9 @@ body {
   font-size: 20px;
   border-style: solid;
   border-color: #646d7c;
+  background-color: #383e4c;
   color: white;
+  cursor: pointer;
 }
 
 .title {
@@ -436,4 +439,10 @@ hr {
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+
+.black-btn:hover {
+  background-color: rgba(255, 255, 255, 1);
+  color: black;
 }
