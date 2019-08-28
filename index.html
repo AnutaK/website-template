@@ -12,22 +12,22 @@
 <body>
     <div id="header">
         <div class="navigation">
-            <div class="item">Homepage</div>
-            <div class="item">About Us</div>
-            <div class="item">Services</div>
-            <div class="item">Contact</div>
-            <div class="item">External</div>
+            <a href = "#content"><div id="btn1" class="item">Homepage</div></a>
+            <a href = "#section_1"><div id="btn2" class="item">About Us</div></a>  
+            <a href = "#services"><div id="btn3" class="item">Services</div></a>
+            <a href = "#contact-content"><div id="btn4" class="item">Contact</div></a>
+            <a href = "#btn5"><div id="btn5" class="item">External</div></a>
         </div>
     </div>
 
-    <div class="content">
+    <div id ="content">
         <div class="title header-parallax">
             <div class="title-content">
                 <div class="header">CONQUER</div>
                 <div class="description">Simple Bootstrap Template</div>
             </div>
         </div>
-        <div class="section_1">
+        <div id="section_1">
             <article>
                 <img src="assets/images/bengaluru.jpg" alt="Sample photo">
                 <div class="text">
@@ -95,7 +95,7 @@
                 </div>
             </article>
         </div>
-        <div class="services services-parallax">
+        <div id ="services" class = "services-parallax">
             <div class="services-content">
                 <h1>Our Services</h1>
                 <p>Nunc diam leo, fringilla vulputate elit lobortis, consectetur vestibulum quam. Sed id </p>
@@ -168,8 +168,8 @@
                 </div>
             </article>
         </div>
-        <div class="contact-body contact-parallax">
-            <div class="contact-content">
+        <div id="contact-body" class = "contact-parallax">
+            <div id="contact-content">
                 <div class="header">Contact Form</div>
                 <form>
                     <div id="instructions">
