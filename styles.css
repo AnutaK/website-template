@@ -6,6 +6,8 @@ body {
 
 .content {
   padding: 0;
+  display: grid;
+  justify-content: center;
 }
 
 .sticky {
@@ -65,13 +67,15 @@ body {
 
 .section_1 {
   display: grid;
+  justify-content: center;
   grid-template-columns: repeat(auto-fill, 375px);
   grid-gap: 30px;
   margin-top: 70px;
-  justify-content: center;
-}
+  }
 
 .section_1>article {
+  display: grid;
+  justify-content: center;
   background-color: #F0F0F0;
 }
 
@@ -264,7 +268,6 @@ body {
 .contact-body {
   display: flex;
   height: 550px;
-  /* background-image: url('assets/images/india-transparent.png'); */
   background-position: center;
   background-size: cover;
 }
@@ -297,44 +300,54 @@ form {
     ". button";
   margin: 20px 400px 20px 400px;
   color: black;
+
 }
 #name {
   grid-area: name;
+  background-color: rgba(242, 242, 242, 0.4);
 }
 
 #email {
   grid-area: email;
+  background-color: rgba(242, 242, 242, 0.4);
+  font-size: 20px;
 }
 
 #subject {
   grid-area: subject;
+  background-color: rgba(242, 242, 242, 0.4);
+  font-size: 20px;
+  color: black;
+
 }
 
 #instructions {
   font-size: 20px;
   line-height: 1;
-  /* border: none; */
   border-radius: 5px;
-  /* background: rgba(200, 54, 54, 0.5); */
+  background-color: rgba(242, 242, 242, 0.4);
   grid-area: instructions;
 }
 
 .instructions {
   padding: 20px;
-  /* margin-bottom: 30px; */
+}
 
+input {
+  background-color: rgba(242, 242, 242, 0.4);
 }
 
 input[type="text"] {
-  opacity: 0.5;
   font-size: 20px;
   border-radius: 5px;
+  background-color: rgba(242, 242, 242, 0.4);
+
 }
 
 textarea {
-  color: black;
   font-size: 20px;
-  opacity: 0.5;
+  background-color: rgba(242, 242, 242, 0.4);
+
 }
 
 label {
@@ -355,6 +368,8 @@ label {
 #message {
   padding-top: 20px;
   grid-area: message;
+  background-color: rgba(242, 242, 242, 0.4);
+
 }
 
 /*Footer*/
@@ -443,6 +458,6 @@ hr {
 
 
 .black-btn:hover {
-  background-color: rgba(255, 255, 255, 1);
+  background-color: rgba(242, 242, 242, 0.4);
   color: black;
 }
